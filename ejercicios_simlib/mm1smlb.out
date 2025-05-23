@@ -1,0 +1,47 @@
+Single-server queueing system using simlib
+
+Mean interarrival time     10.000 minutes
+
+Mean service time           9.000 minutes
+
+Total simulation time        1000 minutes
+
+
+Delays in queue, in minutes:
+
+ sampst                         Number
+variable                          of
+ number       Average           values          Maximum          Minimum
+________________________________________________________________________
+
+    1         18.0610          92.0000          81.0929          0.00000 
+________________________________________________________________________
+
+
+
+Queue length and server utilization:
+
+  File         Time
+ number       average          Maximum          Minimum
+_______________________________________________________
+
+    1         1.72557          7.00000          0.00000 
+
+    2        0.743454          1.00000          0.00000 
+_______________________________________________________
+
+
+
+  File         Time
+ number       average          Maximum          Minimum
+_______________________________________________________
+
+    3         1.70832          11.0000          0.00000 
+
+    4        0.766484          1.00000          0.00000 
+_______________________________________________________
+
+
+
+Time simulation ended:    1006.797 minutes
+Number of customers completed both services:      90
