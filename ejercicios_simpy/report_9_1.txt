@@ -1,0 +1,32 @@
+Two-Level Queueing System Report
+==================================================
+
+System Configuration:
+- Mean interarrival time: 10.000 minutes
+- Mean service time: 9.000 minutes
+- Level 1 Servers: 1
+- Level 2 Servers: 1
+- Distribution type: 1 (Exponential/Exponential)
+
+Combined Delay Statistics (Queue 1 + Queue 2):
+- Average total delay: 73.116 minutes
+- Maximum total delay: 236.879 minutes
+- Minimum total delay: 0.000 minutes
+
+Queue 1 Statistics:
+- Average delay: 28.159 minutes
+- Maximum delay: 112.039 minutes
+- Minimum delay: 0.000 minutes
+- Average queue length: 2.748
+- Server utilization: 0.844
+
+Queue 2 Statistics:
+- Average delay: 44.822 minutes
+- Maximum delay: 211.672 minutes
+- Minimum delay: 0.000 minutes
+- Average queue length: 4.362
+- Server utilization: 0.846
+
+Simulation Summary:
+- Customers completed: 972
+- Simulation duration: 10000 minutes

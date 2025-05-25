@@ -11,7 +11,8 @@
 #define STREAM_INTERARRIVAL 1
 #define STREAM_SERVICE 2
 
-int num_custs_delayed, total_simulation_time, num_completed_customers, distribution_type,servers_level1, servers_level2;
+int num_custs_delayed, total_simulation_time, num_completed_customers, 
+distribution_type,servers_level1, servers_level2;
 float mean_interarrival, mean_service;
 FILE *infile, *outfile;
 
