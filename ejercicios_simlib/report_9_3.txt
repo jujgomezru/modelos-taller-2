@@ -1,10 +1,15 @@
-Single-server queueing system using simlib
+Multi-server queueing system using simlib
 
 Mean interarrival time     10.000 minutes
 
 Mean service time           9.000 minutes
 
 Total simulation time       10000 minutes
+
+Distribution type: 3
+Interarrival: Exponential, Service: Constant
+Number of servers at level 1: 1
+Number of servers at level 2: 1
 
 
 Delays in queue, in minutes:
@@ -14,7 +19,7 @@ variable                          of
  number       Average           values          Maximum          Minimum
 ________________________________________________________________________
 
-    1         121.123          1014.00          349.119          0.00000 
+    1         47.3141          1015.00          208.489          0.00000 
 ________________________________________________________________________
 
 
@@ -25,9 +30,9 @@ Queue length and server utilization:
  number       average          Maximum          Minimum
 _______________________________________________________
 
-    1         12.2813          37.0000          0.00000 
+    1         4.79695          24.0000          0.00000 
 
-    2        0.925342          1.00000          0.00000 
+    2        0.911567          1.00000          0.00000 
 _______________________________________________________
 
 
@@ -36,12 +41,14 @@ _______________________________________________________
  number       average          Maximum          Minimum
 _______________________________________________________
 
-    3         5.06968          28.0000          0.00000 
+    3         0.00000          1.00000          0.00000 
 
-    4        0.862937          1.00000          0.00000 
+    4        0.911567          1.00000          0.00000 
 _______________________________________________________
 
 
 
-Time simulation ended:   10000.495 minutes
-Number of customers completed both services:    1006
+Time simulation ended:   10011.330 minutes
+Number of customers completed both services:    1014
+Number of servers at level 1: 1
+Number of servers at level 2: 1
