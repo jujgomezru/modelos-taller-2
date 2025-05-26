@@ -12,7 +12,7 @@ Number of servers at level 1: 1
 Number of servers at level 2: 1
 
 
-Delays in queue, in minutes:
+Delays in Queue 1, in minutes:
 
  sampst                         Number
 variable                          of
@@ -24,7 +24,31 @@ ________________________________________________________________________
 
 
 
-Queue length and server utilization:
+Delays in Queue 2, in minutes:
+
+ sampst                         Number
+variable                          of
+ number       Average           values          Maximum          Minimum
+________________________________________________________________________
+
+    2         0.00000          1014.00          0.00000          0.00000 
+________________________________________________________________________
+
+
+
+Total System Time (arrival to final departure), in minutes:
+
+ sampst                         Number
+variable                          of
+ number       Average           values          Maximum          Minimum
+________________________________________________________________________
+
+    3         65.3607          1014.00          226.489          18.0000 
+________________________________________________________________________
+
+
+
+Queue lengths and server utilization:
 
   File         Time
  number       average          Maximum          Minimum
@@ -41,7 +65,7 @@ _______________________________________________________
  number       average          Maximum          Minimum
 _______________________________________________________
 
-    3         0.00000          1.00000          0.00000 
+    3         0.00000     -1.00000E+30      1.00000E+30 
 
     4        0.911567          1.00000          0.00000 
 _______________________________________________________

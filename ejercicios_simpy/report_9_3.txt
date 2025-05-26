@@ -1,32 +1,42 @@
-Two-Level Queueing System Report
-==================================================
+Multi-server queueing system using SimPy
 
-System Configuration:
-- Mean interarrival time: 10.000 minutes
-- Mean service time: 9.000 minutes
-- Level 1 Servers: 1
-- Level 2 Servers: 1
-- Distribution type: 3 (Exponential/Constant)
+Mean interarrival time           10.000 minutes
 
-Combined Delay Statistics (Queue 1 + Queue 2):
-- Average total delay: 26.045 minutes
-- Maximum total delay: 133.076 minutes
-- Minimum total delay: 0.000 minutes
+Mean service time                9.000 minutes
 
-Queue 1 Statistics:
-- Average delay: 26.193 minutes
-- Maximum delay: 133.076 minutes
-- Minimum delay: 0.000 minutes
-- Average queue length: 2.584
-- Server utilization: 0.875
+Total simulation time            10000.000 minutes
 
-Queue 2 Statistics:
-- Average delay: 0.000 minutes
-- Maximum delay: 0.000 minutes
-- Minimum delay: 0.000 minutes
-- Average queue length: 0.000
-- Server utilization: 0.874
+Distribution type: 3
+Interarrival: Exponential, Service: Constant
+Number of servers at level 1: 1
+Number of servers at level 2: 1
 
-Simulation Summary:
-- Customers completed: 971
-- Simulation duration: 10000 minutes
+
+Delays in Queue 1, in minutes:
+  Average: 67.317
+  Maximum: 219.218
+  Minimum: 0.000
+  Number measured: 1031
+
+Delays in Queue 2, in minutes:
+  Average: 0.000
+  Maximum: 0.000
+  Minimum: 0.000
+  Number measured: 1030
+
+Total System Time (arrival to final departure), in minutes:
+  Average: 85.424
+  Maximum: 237.218
+  Minimum: 18.000
+  Number measured: 1029
+
+Queue lengths:
+  Average queue 1 length: 6.943
+  Average queue 2 length: 0.000
+
+Server utilization:
+  Server 1 utilization: 92.7%
+  Server 2 utilization: 92.6%
+
+Time simulation ended:            10000.000 minutes
+Number of customers completed both services:        1029

@@ -12,27 +12,51 @@ Number of servers at level 1: 1
 Number of servers at level 2: 1
 
 
-Delays in queue, in minutes:
+Delays in Queue 1, in minutes:
 
  sampst                         Number
 variable                          of
  number       Average           values          Maximum          Minimum
 ________________________________________________________________________
 
-    1         36.6710          998.000          148.308          0.00000 
+    1         34.0812          999.000          212.569          0.00000 
 ________________________________________________________________________
 
 
 
-Queue length and server utilization:
+Delays in Queue 2, in minutes:
+
+ sampst                         Number
+variable                          of
+ number       Average           values          Maximum          Minimum
+________________________________________________________________________
+
+    2         72.1279          993.000          235.237          0.00000 
+________________________________________________________________________
+
+
+
+Total System Time (arrival to final departure), in minutes:
+
+ sampst                         Number
+variable                          of
+ number       Average           values          Maximum          Minimum
+________________________________________________________________________
+
+    3         124.112          992.000          286.115          3.34363 
+________________________________________________________________________
+
+
+
+Queue lengths and server utilization:
 
   File         Time
  number       average          Maximum          Minimum
 _______________________________________________________
 
-    1         3.66076          15.0000          0.00000 
+    1         3.40471          22.0000          0.00000 
 
-    2        0.894527          1.00000          0.00000 
+    2        0.848335          1.00000          0.00000 
 _______________________________________________________
 
 
@@ -41,14 +65,14 @@ _______________________________________________________
  number       average          Maximum          Minimum
 _______________________________________________________
 
-    3         3.54243          25.0000          0.00000 
+    3         7.17686          25.0000          0.00000 
 
-    4        0.864306          1.00000          0.00000 
+    4        0.910061          1.00000          0.00000 
 _______________________________________________________
 
 
 
 Time simulation ended:   10000.000 minutes
-Number of customers completed both services:     993
+Number of customers completed both services:     992
 Number of servers at level 1: 1
 Number of servers at level 2: 1
