@@ -1,0 +1,42 @@
+Multi-server queueing system using SimPy
+
+Mean interarrival time           10.000 minutes
+
+Mean service time                9.000 minutes
+
+Total simulation time            10000.000 minutes
+
+Distribution type: 4
+Interarrival: Constant, Service: Constant
+Number of servers at level 1: 1
+Number of servers at level 2: 1
+
+
+Delays in Queue 1, in minutes:
+  Average: 0.000
+  Maximum: 0.000
+  Minimum: 0.000
+  Number measured: 999
+
+Delays in Queue 2, in minutes:
+  Average: 0.000
+  Maximum: 0.000
+  Minimum: 0.000
+  Number measured: 999
+
+Total System Time (arrival to final departure), in minutes:
+  Average: 18.000
+  Maximum: 18.000
+  Minimum: 18.000
+  Number measured: 998
+
+Queue lengths:
+  Average queue 1 length: 0.000
+  Average queue 2 length: 0.000
+
+Server utilization:
+  Server 1 utilization: 89.9%
+  Server 2 utilization: 89.8%
+
+Time simulation ended:            10000.000 minutes
+Number of customers completed both services:        998

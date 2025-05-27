@@ -1,0 +1,42 @@
+Multi-server queueing system using SimPy
+
+Mean interarrival time           10.000 minutes
+
+Mean service time                8.500 minutes
+
+Total simulation time            10000.000 minutes
+
+Distribution type: 1
+Interarrival: Exponential, Service: Exponential
+Number of servers at level 1: 1
+Number of servers at level 2: 1
+
+
+Delays in Queue 1, in minutes:
+  Average: 45.895
+  Maximum: 212.819
+  Minimum: 0.000
+  Number measured: 967
+
+Delays in Queue 2, in minutes:
+  Average: 33.498
+  Maximum: 233.716
+  Minimum: 0.000
+  Number measured: 959
+
+Total System Time (arrival to final departure), in minutes:
+  Average: 95.410
+  Maximum: 306.899
+  Minimum: 2.611
+  Number measured: 958
+
+Queue lengths:
+  Average queue 1 length: 4.491
+  Average queue 2 length: 3.224
+
+Server utilization:
+  Server 1 utilization: 81.8%
+  Server 2 utilization: 79.4%
+
+Time simulation ended:            10000.000 minutes
+Number of customers completed both services:        958
