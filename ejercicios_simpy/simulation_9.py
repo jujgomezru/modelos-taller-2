@@ -152,7 +152,9 @@ class SimuladorSecuencial:
 
 def read_parameters(filename):
     with open(filename, 'r') as f:
-        values = list(map(float, f.readline().strip().split()))
+        # Read first line with numerical parameters
+        first_line = f.readline().strip()
+        values = list(map(float, first_line.split()))
         
         mean_interarrival = values[0]
         mean_service = values[1]
@@ -161,14 +163,23 @@ def read_parameters(filename):
         servers_level1 = int(values[4])
         servers_level2 = int(values[5])
         
+        # Read second line for output filename (quoted or unquoted)
+        output_filename = f.readline().strip()
+        if output_filename.startswith('"') and output_filename.endswith('"'):
+            output_filename = output_filename[1:-1]
+        
+        # If no filename was specified, use default
+        if not output_filename:
+            output_filename = f"report_9_{distribution_type}.txt"
+        
         return (mean_interarrival, mean_service, total_simulation_time,
-                distribution_type, servers_level1, servers_level2)
+                distribution_type, servers_level1, servers_level2, output_filename)
 
-def run_simulation(input_file, output_prefix):
+def run_simulation(input_file):
     try:
         params = read_parameters(input_file)
         mean_interarrival, mean_service, total_simulation_time, \
-        distribution_type, servers_level1, servers_level2 = params
+        distribution_type, servers_level1, servers_level2, output_filename = params
         
         env = simpy.Environment()
         system = SimuladorSecuencial(env, mean_interarrival, mean_service,
@@ -176,12 +187,10 @@ def run_simulation(input_file, output_prefix):
         env.run(until=total_simulation_time)
         
         report = system.generate_report()
-        output_filename = f"{output_prefix}_{distribution_type}.txt"
         
         with open(output_filename, 'w') as f:
             f.write(report)
         
-        print(f"Simulation complete. Report saved to {output_filename}")
         return True
     
     except FileNotFoundError:
@@ -193,11 +202,11 @@ def run_simulation(input_file, output_prefix):
 
 if __name__ == "__main__":
     input_file = "parameters_9.txt"
-    output_prefix = "report_9"
     
-    if not run_simulation(input_file, output_prefix):
+    if not run_simulation(input_file):
         print("Creating sample parameters file and running simulation...")
         with open(input_file, 'w') as f:
             f.write("5.0 4.0 1000 1 2 3\n")
+            f.write('"report_9.txt"\n')
         
-        run_simulation(input_file, output_prefix)
+        run_simulation(input_file)
